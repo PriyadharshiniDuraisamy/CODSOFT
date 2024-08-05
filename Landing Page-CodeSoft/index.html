@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nature Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: wheat;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .full-screen {
+            background: url('https://images.pexels.com/photos/34950/pexels-photo.jpg?cs=srgb&dl=nature-forest-industry-34950.jpg&fm=jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .full-screen .content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2em;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        section#gallery .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        section#gallery .gallery-container img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        section#contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section#contact form input, section#contact form textarea {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 1em;
+            padding: 0.5em;
+        }
+
+        section#contact form input[type="submit"] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+
+        section#contact form input[type="submit"]:hover {
+            background: #45a049;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Nature Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="full-screen">
+        <div class="content">
+            <h2>Explore the Beauty of Nature</h2>
+            <p>Use and Enjoy the website by using our website you get chance to palnt a tree in amazonaws</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg" alt="Image 1">
+            <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="Image 2">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Nature-Full-HD-Images-For-Desktop.jpg" alt="Image 3">
+            <img src="https://wallpapercave.com/wp/wp2782413.jpg" alt="Image 4">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This website brings back our knowledge and Wealth of the Nature. Where this is very important in humans life which is to be protected.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>This is Nature Website</p>
+    </footer>
+
+</body>
+</html>
